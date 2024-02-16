@@ -126,6 +126,7 @@ def load(request):
         message = "Everything works"
 
     except Exception as e:
-        message = f"Something went wrong: \n{e}"
+        print(e)
+        message = f"Something went wrong"
 
     return HttpResponse(message)
